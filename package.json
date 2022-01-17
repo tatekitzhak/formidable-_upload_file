@@ -1,0 +1,28 @@
+{
+  "name": "uploading_files_using_formidable",
+  "version": "1.0.0",
+  "description": "Upload File using formidable module in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatekitzhak/formidable_upload_file.git"
+  },
+  "keywords": [
+    "formidable",
+    "express",
+    "nodejs",
+    "formidable",
+    "module",
+    "Upload",
+    "File"
+  ],
+  "author": "Ran Itzhak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatekitzhak/formidable_upload_file/issues"
+  },
+  "homepage": "https://github.com/tatekitzhak/formidable_upload_file#readme"
+}
