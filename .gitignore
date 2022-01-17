@@ -1,0 +1,26 @@
+# Logs
+
+logs
+**/logs
+
+*.log
+**/*.log
+
+.cache/
+**/.cache/
+
+node_modules/
+**/node_modules/
+
+.DS_Store
+**/.DS_Store
+
+dist/*
+**/dist/*
+client/*.txt
+
+uploads/*.*
+**/uploads/*.*
+
+output_text/*.*
+**/output_text/*.*
