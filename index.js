@@ -1,9 +1,9 @@
 const express = require('express')
-var port = 3000
+require('dotenv').config()
+var port = process.env.PORT || 6000
 
 
 //const EventEmitter = require('events');
-
 class App {
   constructor() {
 
@@ -11,17 +11,17 @@ class App {
     this.server.use(express.json());
   }
 
-  start() {
-    this.server.get('/', (req, res) => {
+  async start() {
+    await this.server.get('/', (req, res) => {
         console.log("Class App: ");
-      // process.exit();
       res.send('Hello class App!');
     });
 
-    this.server.listen(port, () => {
-      console.log('Server started on port 3000')
-      //this.emit('start');
-    });
+    await this.server.listen(port, function() {
+        console.log(`Server started on port: ${port}`);
+         //this.emit('start');
+      });
+     
   }
 
   stop() {
