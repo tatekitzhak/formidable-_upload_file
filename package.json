@@ -4,7 +4,8 @@
   "description": "Upload File using formidable module in Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodedemon index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/tatekitzhak/formidable_upload_file/issues"
   },
-  "homepage": "https://github.com/tatekitzhak/formidable_upload_file#readme"
+  "homepage": "https://github.com/tatekitzhak/formidable_upload_file#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
