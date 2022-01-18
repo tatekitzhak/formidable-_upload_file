@@ -1,0 +1,29 @@
+pooja
+
+
+https://www.codegrepper.com/code-examples/whatever/multiple+path+names+for+a+same+component+in+react+router 
+
+https://ui.dev/react-router-v5-route-config/ 
+
+https://stackoverflow.com/questions/65337865/how-mapping-routes-in-react-router-with-protected-function 
+
+https://www.youtube.com/watch?v=QgpJHN_EOGM&ab_channel=h3webdevtuts 
+
+https://www.digitalocean.com/community/tutorials/react-react-router-map-to-routes 
+
+https://www.codegrepper.com/code-examples/javascript/array+map+in+react+js 
+
+https://dev.to/selvaece25/multiple-layout-in-react-router-3acb
+
+Dear [company name, or hiring manager name if you know it],
+I hope your day is going well! My name is [your name], and I'm a [who you are] at
+[school, current workplace, anything]. I am very interested in working for [company
+name] and can start [when you can start]. Your commitment to [company value] and
+[another company value] that I saw on the website inspired me! The products you
+build and the values you stand for make [company name] seem like an ideal workplace
+for me. A little about me, I [insert relevant work experience, extracurriculars,
+and projects here]. I think these experiences would make me a great candidate for
+you.
+Please let me know if there's anything else you need from me. I look forward to
+hearing from you! I can be reached at [email] and [phone number].
+Best regards,

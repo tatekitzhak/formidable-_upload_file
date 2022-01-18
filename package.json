@@ -28,7 +28,8 @@
   "homepage": "https://github.com/tatekitzhak/formidable_upload_file#readme",
   "dependencies": {
     "dotenv": "^14.1.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "formidable": "^2.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

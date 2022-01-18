@@ -1,37 +1,49 @@
 const express = require('express')
+const path = require('path');
+const formidable = require('formidable');
 require('dotenv').config()
 var port = process.env.PORT || 6000
+var upload = require('./services/upload_file')
 
 
 //const EventEmitter = require('events');
 class App {
-  constructor() {
+    constructor() {
 
-    this.server = express();
-    this.server.use(express.json());
-  }
+        this.server = express();
+        this.server.use(express.json());
+    }
 
-  async start() {
-    await this.server.get('/', (req, res) => {
-        console.log("Class App: ");
-      res.send('Hello class App!');
-    });
+    async start() {
+        var render_html_file;
+        await this.server.get('/', (req, res) => {
+            
+            let upload_file = path.join(__dirname +'/public/d.txt');
 
-    await this.server.listen(port, function() {
-        console.log(`Server started on port: ${port}`);
-         //this.emit('start');
-      });
-     
-  }
+            render_html_file = upload.upload_file(null, function (data, error) {
+                //console.log("App start: ", data);
+                
+                res.sendFile(data);
+            })
+            //console.log("Class App: ",form );
+           
+        });
 
-  stop() {
-    if (this.stopped) 
-        return;
-    console.log('Server stopped');
-    //this.emit('stop');
-    this.stopped = true;
-    process.exit();
-  }
+        await this.server.listen(port, function () {
+            console.log(`Server started on port: ${port}`);
+            //this.emit('start');
+        });
+
+    }
+
+    stop() {
+        if (this.stopped)
+            return;
+        console.log('Server stopped');
+        //this.emit('stop');
+        this.stopped = true;
+        process.exit();
+    }
 }
 
 const app = new App();
