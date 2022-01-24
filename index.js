@@ -1,15 +1,18 @@
+/***
+ * https://javascript.plainenglish.io/how-to-build-a-plugin-system-with-node-js-68c097eb3a2e
+ * 
+ */
 const express = require('express')
 const path = require('path');
 const formidable = require('formidable');
 require('dotenv').config()
 var port = process.env.PORT || 6000
 var upload = require('./services/upload_file')
+const EventEmitter = require('events');
 
-
-//const EventEmitter = require('events');
-class App {
+class App extends EventEmitter{
     constructor() {
-
+        super();
         this.server = express();
         this.server.use(express.json());
     }
@@ -17,7 +20,7 @@ class App {
     async start() {
         var render_html_file;
         await this.server.get('/', (req, res) => {
-            
+
             let upload_file = path.join(__dirname +'/public/d.txt');
 
             render_html_file = upload.upload_file(null, function (data, error) {
